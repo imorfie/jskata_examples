@@ -6,7 +6,7 @@ function Cats() {
 	// Get the instance of the Cats class
 	// If there's none, instanciate one
 	var getInstance = function() {
-		if (!this.singletonInstance) { 
+		if (!Cats.singletonInstance) { 
 			this.singletonInstance = createInstance();
 		}
 		return this.singletonInstance;
